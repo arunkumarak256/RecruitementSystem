@@ -1,0 +1,16 @@
+<html>
+<div class="job">
+        <div class="box">
+            <div class="left">
+            {%for i in items%}
+               <div class="same"> <p>Company Name:</p> <h3>{{i.0}}</h3></div>
+               <div class="same"> <p>Role:</p> <h3>{{i.1}}</h3></div>
+               <div class="same"> <p>Salary:</p> <h3>{{i.2}}</h3></div>
+               <div class="same"> <p>Experience:</p> <h3>{{i.3}}</h3></div>
+               <div class="same"> <p>Location:</p> <h3>{{i.4}}</h3></div>
+            </div>
+</div>
+</div>
+
+            {%endfor%}
+            </html>

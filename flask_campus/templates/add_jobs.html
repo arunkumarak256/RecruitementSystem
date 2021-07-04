@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='companysignup.css') }}">
+    </head>
+    <body>
+        <div class="box" style="height:100%">
+            <form action="/add_jobs" method="POST">
+            <br>
+            <div class="Company email" style="margin-top: -1rem;">
+                <p>Email</p>
+                <input class="effect-1" type="text" placeholder="Email" name="email" id="email" style="width: 15rem;">
+                <span class="focus-border"></span>
+            </div>
+            <br>
+            <br>
+            <div class="col-3" style="margin-top: -1rem;">
+                <p>Job Domain</p>
+                <input class="effect-1" type="text" placeholder="Job Domain " name="job_domain" id="job_domain" style="width: 15rem;">
+                <span class="focus-border"></span>
+            </div>
+            
+            <div class="col-3" style="margin-top: -1rem;">
+                <p>Job Role</p>
+                <input class="effect-1" type="text" placeholder="Job name" name="job_name" id="job_name" style="width: 15rem;">
+                <span class="focus-border"></span>
+            </div>
+            <br>
+            <br>
+            <div class="col-3" style="margin-top: -1rem;">
+                <p>Date Posted</p>
+                <label for="date_created">Date created</label> 
+                <input class="effect-1" type="date" id="date_created" name="date_created">
+                  </div>
+                  
+            <div class="col-3" style="margin-top: -1rem;">
+                <p>Last Date</p>
+                <label for="date_created">Last date to apply</label> 
+                <input class="effect-1" type="date" id="last_date" name="last_date">
+                  </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="col-3" style="margin-top: -1rem;">
+                <p>Job Description</p>
+                <input class="effect-1" type="text" placeholder="job_role" name="job_role" id="job_role" style="width: 15rem;">
+                <span class="focus-border"></span>
+            </div>
+            <div class="col-3" style="margin-top: -1rem;">
+                <p>Experience</p>
+                <input class="effect-1" type="text" placeholder="Experience" name="Experience" id="Experience" style="width: 15rem;">
+                <span class="focus-border"></span>
+            </div>
+            <div class="col-3" style="margin-top: -1rem;">
+                <p>Salary</p>
+                <input class="effect-1" type="text" placeholder="Salary" name="Salary" id="Salary" style="width: 15rem;">
+                <span class="focus-border"></span>
+            </div>
+            <div class="col-3" style="margin-top: -1rem;">
+                <p>Skill 1</p>
+                <input class="effect-1" type="text" name="skill_1" id="skill_1" style="width: 15rem;">
+                <span class="focus-border"></span>
+            </div>
+            
+            <div class="col-3" style="margin-top: -1rem;">
+                <p>Skill 2</p>
+                <input class="effect-1" type="text" name="skill_2" id="skill_2" style="width: 15rem;">
+                <span class="focus-border"></span>
+            </div>
+            
+            <div class="col-3" style="margin-top: -1rem;">
+                <p>Skill 3</p>
+                <input class="effect-1" type="text" name="skill_3" id="skill_3" style="width: 15rem;">
+                <span class="focus-border"></span>
+            </div>
+            
+            <div class="col-3" style="margin-top: -1rem;">
+                <p>Skill 4</p>
+                <input class="effect-1" type="text" name="skill_4" id="skill_4" style="width: 15rem;">
+                <span class="focus-border"></span>
+            </div>
+            
+            <div class="col-3" style="margin-top: -1rem;">
+                <p>Skill 5</p>
+                <input class="effect-1" type="text" name="skill_5" id="skill_5" style="width: 15rem;">
+                <span class="focus-border"></span>
+            </div>
+            <div class="col-3" style="margin-top: -1rem;">
+                <p>Location</p>
+                <input class="effect-1" type="text" name="location" id="location" style="width: 15rem;">
+                <span class="focus-border"></span>
+            </div>
+            
+            <button type="submit" class="sign" >Add job</button>
+            </div>
+            </form>
+        </div>
+    </body>
+</html>

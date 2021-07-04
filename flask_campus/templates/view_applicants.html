@@ -1,0 +1,23 @@
+<html>
+<h1>Jobs posted
+<div class="job">
+        <div class="box">
+            {%for i in items%}
+               <div class="same"> <p>Role:</p> <h3>{{i.job_name}}</h3></div>
+               <div class="same"> <p>Domain:</p> <h3>{{i.job_domain}}</h3></div>
+               <div class="same"> <p>Salary:</p> <h3>{{i.salary}}</h3></div>
+               <div class="same"> <p>Location:</p> <h3>{{i.location}}</h3></div>
+               <div class="same"> <p>Date posted:</p> <h3>{{i.date_created}}</h3></div>
+               <div class="same"> <p>Last date to apply:</p> <h3>{{i.last_date}}</h3></div>
+               
+                <form action="/view_job_applicants" method="post">
+                <input type="input"  name="job_id" id='job_id' value={{i.id}} />
+                <label for="job_id">Job ID</label>    
+               <a href="/view_job_applicants"> <button>View applicants</button> </a>
+            </div>
+        </div>
+        
+            {%endfor%}
+
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<title>Student Profile</title>
+<head>
+<style>
+#profile{
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#profile td, #profile th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+
+#profile tr:hover {background-color: #ddd;}
+
+#profile th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<table id="profile">
+  <tr>
+    <th>Name</th>
+    <td>{{items.Name}}</td>
+  </tr>
+  <tr>
+    <th>Password</th>
+    <td>{{items.Password}}</td>
+  </tr>
+  <tr>
+    <th>Email</th>
+    <td>{{items.Email_id}}</td>
+  </tr>
+  
+<tr>
+    <th>College</th>
+    <td>{{items.College}}</td>
+  </tr>
+  <tr>
+    <th>Education</th>
+    <td>{{items.Education}}</td>
+  </tr>
+<tr>
+    <th>Department</th>
+    <td>{{items.Specialization}}</td>
+  </tr>
+  <tr>
+    <th>CGPA</th>
+    <td>{{items.CGPA}}</td>
+  </tr>
+  <tr>
+    <th>Address</th>
+    <td>{{items.Address}}</td>
+  </tr>
+  <tr>
+    <th>Contact</th>
+    <td>{{items.Contact}}</td>
+  </tr> 
+                
+  </table>
+  <h1>Update your profile below if needed
+<form action="/update_profile" method="POST">
+                
+                    <div class="form__group field">
+                    <input type="input" class="form__field" name="uname" id='uname' placeholder={{items.Name}} />
+                    <label for="uname" class="form__label" >Name</label>
+                    </div>
+                    <div class="form__group field">
+                    <input type="input" class="form__field" name="password" id='password' placeholder={{items.Password}} />
+                    <label for="password" class="form__label" >Password</label>
+                    </div>
+                    <div class="form__group field">
+                    <input type="input" class="form__field" name="email" id='email' placeholder={{items.Email_id}} />
+                    <label for="email" class="form__label" >Email</label>
+                    </div>
+                    
+                    <div class="form__group field">
+                    <input type="input" class="form__field" name="college" id='college' placeholder={{items.College}} />
+                    <label for="college" class="form__label" >College</label>
+                    </div>
+                    <div class="form__group field">
+                    <input type="input" class="form__field" name="education" id='education' placeholder={{items.Education}} />
+                    <label for="uname" class="form__label" >Education</label>
+                    </div>
+                    
+                    <div class="form__group field">
+                    <input type="input" class="form__field" name="dept" id='dept' placeholder={{items.Specialization}} />
+                    <label for="dept" class="form__label" >Department</label>
+                    </div>
+
+                    <div class="form__group field">
+                    <input type="input" class="form__field" name="cgpa" id='cgpa' placeholder={{items.CGPA}} />
+                    <label for="cgpa" class="form__label" >CGPA</label>
+                    </div>
+                    <div class="form__group field">
+                    <input type="input" class="form__field" name="address" id='address' placeholder={{items.Address}} />
+                    <label for="address" class="form__label" >Address</label>
+                    </div>
+                    <div class="form__group field">
+                    <input type="input" class="form__field" name="contact" id='contact' placeholder={{items.Contact}} />
+                    <label for="contact" class="form__label" >Contact</label>
+                    </div>
+
+
+                
+            <a href="/view_profile"> <button>Update </button> </a>
+
+
+</html>

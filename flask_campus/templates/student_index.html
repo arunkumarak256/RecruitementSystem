@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Student Portal</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='homepage.css')}}">
+        
+    </head>
+    <body style="background-image:url({{url_for('static', filename='home.jpeg')}});">
+        <div class="logo">
+            <img src="{{url_for('static', filename='logo.jpeg')}}">
+        </div>
+        <div class="intro">
+            <div class="sub">
+            <div class="button-container-1">
+                <span class="mas">Update Profile</span>
+              <button id='work' type="button" name="Hover" onclick="/update_profile"><a href="/update_profile">Update Profile<a></button>
+            </div>
+          
+            <div class="button-container-3">
+            <span class="mas">Withdraw application</span>
+          <button type="button" name="Hover"><a href="/view_jobs">Withdraw application</a></button>
+          </div> 
+          <div class="button-container-3">
+            <span class="mas">View applied jobs</span>
+          <button type="button" name="Hover"><a href="/view_applied_jobs">Jobs Applied</a></button>
+          </div> 
+          <div class="button-container-3">
+                <span class="mas">View Profile</span>
+              <button id='work' type="button" name="Hover" onclick="/view_profile"><a href="/view_profile">View Profile<a></button>
+            </div>
+          <div class="button-container-3">
+                <span class="mas">Apply for a job</span>
+              <button id='work' type="button" name="Hover" onclick="/apply_jobs"><a href="/apply_jobs">Apply for job<a></button>
+            </div>
+          
+        
+        </div>   
+        </div>
+        
+        
+    </body>
+    
+</html>

@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='studentsignup.css') }}">
+       
+    </head>
+    <body >
+        <div class="firstsection">
+            <br>
+            <br>
+            <br>
+            <br>
+            <form action="/studentsignup" method="POST" enctype="multipart/form-data">
+            <div class="form__group field">
+                <input type="input" class="form__field" placeholder="Name" name="fname" id='fname' required />
+                <label for="fname" class="form__label">FirstName</label>
+              </div>
+              <br>
+              <br><br>
+              
+              <div class="form__group field">
+                <input type="input" class="form__field" placeholder="Name" name="lname" id='lname' required />
+                <label for="lname" class="form__label">LastName</label>
+              </div>
+              
+              <br>
+              <br>
+              <br>
+              <div class="form__group field">
+                <input type="input" class="form__field" placeholder="Name" name="email" id='email' required />
+                <label for="email" class="form__label">Email</label>
+              </div>
+              <div name="exists" id="exists"></div>
+              <br>
+              <br>
+              <br>
+              <div class="form__group field">
+                <input type="input" class="form__field" placeholder="Name" name="password" id='password' required />
+                <label for="password" class="form__label">Password</label>
+              </div>
+              <br>
+              <br>
+              <br>
+              <div class="form__group field">
+                <input type="input" class="form__field" placeholder="Name" name="contact" id='contact' required />
+                <label for="contact" class="form__label">Contact Number</label>
+              </div>
+        </div>
+        <div class="line">
+
+        </div>
+        <div class="secondsection">
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="form__group field" style="margin-left: 4rem;">
+                <input type="input" class="form__field" placeholder="Name" name="address" id='address' required />
+                <label for="address" class="form__label">Address</label>
+              </div>
+              <br>
+              <br>
+              <br>
+              <div class="form__group field" style="margin-left: 4rem;">
+                <input type="input" class="form__field" placeholder="Name" name="clg" id='clg' required />
+                <label for="clg" class="form__label">College Name</label>
+              </div>
+              <br>
+              <br>
+              <br>
+              <div class="form__group field" style="margin-left: 4rem;">
+                <input type="input" class="form__field" placeholder="Name" name="degree" id='degree' required />
+                <label for="degree" class="form__label">Degree</label>
+              </div>
+              <br>
+              <br>
+              <br>
+              <div class="form__group field" style="margin-left: 4rem;">
+                <input type="input" class="form__field" placeholder="Name" name="spec" id='spec' required />
+                <label for="spec" class="form__label">Specialisation</label>
+              </div>
+              <br>
+              <br>
+              <br>
+              <div class="form__group field" style="margin-left: 4rem;">
+                <input type="input" class="form__field" placeholder="Name" name="cgpa" id='cgpa' required />
+                <label for="cgpa" class="form__label">CGPA</label>
+              </div>   
+              <div class="form__group field" style="margin-left: 4rem;">
+                <input type="input" class="form__field" placeholder="skill_1" name="skill_1" id='skill_1'/>
+                <label for="skill_1" class="form__label">Skill 1</label>
+               </div>
+                 
+              <div class="form__group field" style="margin-left: 4rem;">
+                <input type="input" class="form__field" placeholder="skill_2" name="skill_2" id='skill_2'/>
+                <label for="skill_2" class="form__label">Skill 2</label>
+               </div>
+                 
+              <div class="form__group field" style="margin-left: 4rem;">
+                <input type="input" class="form__field" placeholder="skill_3" name="skill_3" id='skill_3'/>
+                <label for="skill_3" class="form__label">Skill 3</label>
+               </div>
+                 
+              <div class="form__group field" style="margin-left: 4rem;">
+                <input type="input" class="form__field" placeholder="skill_4" name="skill_4" id='skill_4'/>
+                <label for="skill_4" class="form__label">Skill 4</label>
+               </div>
+                 
+              <div class="form__group field" style="margin-left: 4rem;">
+                <input type="input" class="form__field" placeholder="skill_5" name="skill_5" id='skill_5'/>
+                <label for="skill_5" class="form__label">Skill 5</label>
+               </div>
+            <div class="form__group field" style="margin-left: 4rem;">
+              
+                
+        </div>
+        <div class="line">
+
+        </div>
+        <div class="thirdsection">
+            <br>
+            <br>
+              <br>
+              <br>
+              <br><br><br>
+             
+              <label for="myfile" style="margin-left: 3rem;font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 1rem;">Upload your Resume:<br><br></label>
+<input type="file" id="myfile" name="myfile" style="margin-left: 4rem;" accept=".pdf">
+<br>
+<br>
+<br><br><br>
+          <button type="submit" class="sign">Signup as Student</button>
+        </form>
+        </div>
+    </body>
+</html>

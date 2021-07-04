@@ -1,0 +1,31 @@
+<html>
+<div class="job">
+        <div class="box">
+            <div class="left">
+            {%for i in items%}
+               <div class="same"> <p>Name:</p> <h3>{{i.0}}</h3></div>
+               <div class="same"> <p>College:</p> <h3>{{i.2}}</h3></div>
+               <div class="same"> <p>Education:</p> <h3>{{i.3}}</h3></div>
+               <div class="same"> <p>Specialization:</p> <h3>{{i.4}}</h3></div>
+               
+               <div class="same"> <p>CGPA:</p> <h3>{{i.5}}</h3></div>
+               <div class="same"> <p>Skills:</p> <h5>{{i.6}},{{i.7}},{{i.8}},{{i.9}},{{i.10}}</h5></div>
+               
+               <div class="same"> <p>Assessment answer:</p> <h3>{{i.11}}</h3></div>
+               <form action="{{ url_for('send_mail') }}" method="post">
+               <label for="job_id">Email ID:</label>
+               <br>
+    
+                <input type="input" class="form__field" name="email_id" id='email_id' placeholder={{i.1}} value={{i.1}} />
+                
+                <a href="/send mail"><input type="submit" ></a>
+                </form>
+                
+
+               
+            </div>
+</div>
+</div>
+
+            {%endfor%}
+            </html>

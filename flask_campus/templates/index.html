@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='homepage.css')}}">
+        
+    </head>
+    <body style="background-image:url({{url_for('static', filename='home.jpeg')}});">
+        <div class="logo">
+            <img src="{{url_for('static', filename='logo.jpeg')}}">
+        </div>
+        <div class="intro">
+            <h1>Change your life <br>with <span>Recruitment System</span></h1>
+           
+            <p>Efficient and Fast Employment search portal for Engineers.<br>
+            Login to Today to have bright future !!!</p>
+            <div class="sub">
+            <div class="button-container-1">
+                <span class="mas">Login</span>
+              <button id='work' type="button" name="Hover" onclick="/login"><a href="/login">Login<a></button>
+            </div>
+          
+            <div class="button-container-2">
+              <span class="mas">Signup as Student</span>
+            <button type="button" name="Hover" onclick="/studentsignup"><a href="/studentsignup">Signup as Student</a></button>
+          </div>
+          
+          <div class="button-container-3">
+            <span class="mas">Signup as Recruiter</span>
+          <button type="button" name="Hover"><a href="/companysignup">Signup as Recruiter</a></button>
+          </div> 
+        </div>   
+        </div>
+        
+        
+    </body>
+    
+</html>
